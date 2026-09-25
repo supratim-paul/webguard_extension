@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>WebGuard Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <nav><div class="brand">WEBGUARD</div><span>Command Center</span></nav>
+
+    <section class="hero">
+      <div>
+        <small>WEBSITE MONITORING</small>
+        <h1>Your scan history.</h1>
+        <p>Track security, performance, SEO and accessibility reports.</p>
+      </div>
+      <button onclick="loadScans()">Refresh</button>
+    </section>
+
+    <section class="cards">
+      <article><small>SCANS</small><strong id="total">--</strong></article>
+      <article><small>ISSUES</small><strong id="issues">--</strong></article>
+      <article><small>AVG SCORE</small><strong id="avg">--</strong></article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-title"><h2>Recent scans</h2><span id="state"></span></div>
+      <div id="table"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

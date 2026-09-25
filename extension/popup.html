@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>WebGuard</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <span class="eyebrow">WEB SECURITY</span>
+        <h1>WebGuard</h1>
+      </div>
+      <span class="dot"></span>
+    </header>
+
+    <div id="site" class="site">Detecting website...</div>
+    <button id="scan">Scan Website</button>
+
+    <div id="loading" class="loading hidden">Analyzing page…</div>
+
+    <section id="results" class="hidden">
+      <div class="score">
+        <span>Overall score</span>
+        <strong id="overall">--</strong>
+      </div>
+
+      <div class="grid">
+        <div class="metric"><span>Security</span><b id="security">--</b></div>
+        <div class="metric"><span>Performance</span><b id="performance">--</b></div>
+        <div class="metric"><span>SEO</span><b id="seo">--</b></div>
+        <div class="metric"><span>Accessibility</span><b id="accessibility">--</b></div>
+      </div>
+
+      <h2>Issues</h2>
+      <ul id="issues"></ul>
+      <div id="status" class="status"></div>
+    </section>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
