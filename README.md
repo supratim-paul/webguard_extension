@@ -27,17 +27,8 @@ uvicorn main:app --reload
 Backend: http://127.0.0.1:8000
 API docs: http://127.0.0.1:8000/docs
 
-## 2. Load the extension
 
-1. Open Chrome.
-2. Go to `chrome://extensions`
-3. Enable **Developer mode**.
-4. Click **Load unpacked**.
-5. Select the `extension` folder.
-6. Open any website.
-7. Click the WebGuard extension and press **Scan Website**.
-
-## 3. Dashboard
+## 2. Dashboard
 
 Open `dashboard/index.html` with a local server, for example:
 
